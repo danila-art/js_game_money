@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра - Деньги или жизнь</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icons8-money-transfer-96.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="start">
+        <div class="start__user">
+            <h1>Здравствуй дорогой друг</h1>
+            <p>Заполни поле с именем и испытай удачу.</p>
+            <input class="start__input" type="text" id="user" placeholder="Введите Имя">
+            <br>
+            <button class="start__button">Начать игру</button>
+        </div>
+        <div class="game" id="gamePole">
+            <div class="data__user">
+                <h2 id="dataNameUser"></h2>
+                <p id="dataScoreUser">Score - </p>
+            </div>
+            <div class="game__box" id="gameBox">
+                <!-- <div class="game__money" id="money">
+                    <img src="./img/money.png">
+                </div> -->
+                <div class="game__busket" id="busket">
+                    <img src="./img/box.png" alt="error">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/skript.js"></script>
+</body>
+
+</html>

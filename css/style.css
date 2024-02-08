@@ -1,0 +1,133 @@
+body,
+h1,
+h2,
+h3,
+span,
+p {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.start__user {
+    display: block;
+    width: 40vw;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    background-color: #373737bf;
+}
+
+.start__user h1 {
+    font-size: 32px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.start__user p {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.start__input {
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 20vw;
+    height: auto;
+    padding: 1%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.start__input::placeholder {
+    color: white;
+}
+
+.start__button {
+    background-color: green;
+    color: white;
+    width: 15vw;
+    height: auto;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+@keyframes goBottom {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
+
+}
+
+.game {
+    display: none;
+    position: fixed;
+    width: 88vw;
+    height: 88vh;
+    margin: 0 auto;
+}
+
+.game__busket {
+    display: block;
+    /* position: absolute; */
+    width: 6vw;
+    height: 6vh;
+    bottom: 8%;
+    margin-left: 50%;
+    margin-top: 40%;
+
+}
+
+.game__busket img {
+    width: 100%;
+    height: auto;
+}
+
+.game__money {
+    display: block;
+    position: absolute;
+    width: 6vw;
+    height: 6vh;
+    top: 0;
+    left: 0;
+    /* animation: goBottom 20s; */
+}
+
+.game__money img {
+    width: 100%;
+    height: 100%;
+}
+
+.data__user{
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    color: white;
+    font-size: 18px;
+}
